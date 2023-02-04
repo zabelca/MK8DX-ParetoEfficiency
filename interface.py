@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import tkinter as tk
+from PIL import Image, ImageTk
 
 def button1_clicked():
     print("Button 1 clicked")
@@ -22,10 +23,13 @@ def button6_clicked():
 
 root = tk.Tk()
 root.title("6 Buttons Interface")
-root.geometry("200x250")
+root.geometry("1366x768")
+root.iconbitmap(r"C:\Users\zabel\Desktop\shell.png")
+
 
 button1 = tk.Button(root, text="Button 1", command=button1_clicked)
 button1.pack()
+button1.image = mushroom_cup_icon
 
 button2 = tk.Button(root, text="Button 2", command=button2_clicked)
 button2.pack()
