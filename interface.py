@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 import tkinter as tk
-from PIL import Image, ImageTk
+import customtkinter as ctk
+from PIL import ImageTk, Image
 
 def button1_clicked():
     print("Button 1 clicked")
@@ -24,13 +25,15 @@ def button6_clicked():
 root = tk.Tk()
 root.title("6 Buttons Interface")
 root.geometry("1366x768")
-root.iconbitmap(r"C:\Users\zabel\Desktop\shell.png")
+root.protocol("WM_DELETE_WINDOW", root.quit)
+#icon_bitmap = ImageTk.PhotoImage(Image.open(r"images/120px-Crazy8MK8.ico"))
+#root.iconbitmap(r'images/120px-Crazy8MK8.ico')
 
-
-button1 = tk.Button(root, text="Button 1", command=button1_clicked)
+mushroom_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_MushroomCup.png"))
+button1 = tk.Button(root, image=mushroom_cup_icon, width=128, height=128, command=button1_clicked)
 button1.pack()
-button1.image = mushroom_cup_icon
 
+"""
 button2 = tk.Button(root, text="Button 2", command=button2_clicked)
 button2.pack()
 
@@ -45,6 +48,6 @@ button5.pack()
 
 button6 = tk.Button(root, text="Button 6", command=button6_clicked)
 button6.pack()
-
+"""
 root.mainloop()
-                                                
+

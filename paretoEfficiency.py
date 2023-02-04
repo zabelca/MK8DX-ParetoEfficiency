@@ -9,6 +9,8 @@ import seaborn as sns
 import itertools as it
 import tkinter as tk
 import webbrowser as wb
+import customtkinter as ctk
+from PIL import ImageTk, Image
 
 from sklearn.cluster import KMeans
 
@@ -172,25 +174,74 @@ def categories():
 
 root = tk.Tk()
 root.title("Pareto Efficiency Stats")
-root.geometry("200x250")
+root.geometry("1366x768")
 root.protocol("WM_DELETE_WINDOW", root.quit)
 
-button1 = tk.Button(root, text="Charater Classes (by weight)", command=hmap_char_class)
-button1.pack()
+button1 = ctk.CTkButton(master=root, text="Charater Classes (by weight)", width=190, height=40, command=hmap_char_class)
+button1.pack(pady=5)
 
-button2 = tk.Button(root, text="Body/Tire Stats", command=hmap_part_class)
-button2.pack()
+button2 = ctk.CTkButton(master=root, text="Body/Tire Stats", width=190, height=40, command=hmap_part_class)
+button2.pack(pady=5)
 
-button3 = tk.Button(root, text="Pareto Frontier", command=pareto_frontier)
-button3.pack()
+button3 = ctk.CTkButton(master=root, text="Pareto Frontier", width=190, height=40, command=pareto_frontier)
+button3.pack(pady=5)
 
-button4 = tk.Button(root, text="Interactive Graph", command=interactive_graph)
-button4.pack()
+button4 = ctk.CTkButton(master=root, text="Interactive Graph", width=190, height=40, command=interactive_graph)
+button4.pack(pady=5)
 
-button5 = tk.Button(root, text="Combos", command=combos)
-button5.pack()
+button5 = ctk.CTkButton(master=root, text="Combos", width=190, height=40, command=combos)
+button5.pack(pady=5)
 
-button6 = tk.Button(root, text="All Classes", command=categories)
-button6.pack()
+button6 = ctk.CTkButton(master=root, text="All Classes", width=190, height=40, command=categories)
+button6.pack(pady=5)
+
+# All track buttons
+mushroom_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_MushroomCup.png"))
+button7 = tk.Button(root, image=mushroom_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+button7.pack(padx=12, pady=10, side=tk.LEFT)
+
+flower_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_FlowerCup.png"))
+button8 = tk.Button(root, image=flower_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+button8.pack(padx=12, pady=10, side=tk.LEFT)
+
+star_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Star_Cup.png"))
+button9 = tk.Button(root, image=star_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+button9.pack(padx=12, pady=10, side=tk.LEFT)
+
+special_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Special_Cup.png"))
+button10 = tk.Button(root, image=special_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+button10.pack(padx=12, pady=10, side=tk.LEFT)
+
+egg_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Egg_Cup.png"))
+button11 = tk.Button(root, image=egg_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+button11.pack(padx=12, pady=10, side=tk.LEFT)
+
+crossing_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Crossing_Cup.png"))
+button12 = tk.Button(root, image=crossing_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+button12.pack(padx=12, pady=10, side=tk.LEFT)
+
+shell_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Shell_Cup.png"))
+button13 = tk.Button(root, image=shell_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+button13.pack(padx=12, pady=10, side=tk.LEFT)
+
+banana_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Banana_Cup.png"))
+button14 = tk.Button(root, image=banana_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+button14.pack(padx=12, pady=10, side=tk.LEFT)
+
+leaf_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Leaf_Cup.png"))
+button15 = tk.Button(root, image=leaf_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+button15.pack(padx=12, pady=10, side=tk.LEFT)
+
+lightning_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Lightning_Cup.png"))
+button16 = tk.Button(root, image=lightning_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+button16.pack(padx=12, pady=10, side=tk.LEFT)
+
+triforce_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Triforce_Cup.png"))
+button17 = tk.Button(root, image=triforce_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+button17.pack(padx=12, pady=10, side=tk.LEFT)
+
+bell_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Bell_Cup.png"))
+button18 = tk.Button(root, image=bell_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+button18.pack(padx=12, pady=10, side=tk.LEFT)
 
 root.mainloop()
