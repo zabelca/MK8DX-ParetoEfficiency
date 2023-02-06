@@ -32,7 +32,6 @@ gliders = gliders.loc[gliders['DLC']==0]
 
 stat_cols = bodies.columns[2:-1]
 main_cols = ['Weight','Speed','Acceleration','Handling','Traction']
-track_cols = ['Track', 'Character', 'Vehicle', 'Tires', 'Glider', 'Tilt']
 
 # lots of characters/karts/tires are exactly the same. here we just want one from each stat type
 chars_unique = chars.drop_duplicates(subset=stat_cols).set_index('Character')[stat_cols].sort_values('Weight')
@@ -174,121 +173,76 @@ def categories():
         print()
 
 
-def hide_buttons():
-    button7.grid_forget()
-    button8.grid_forget()
-    button9.grid_forget()
-    button10.grid_forget()
-    button11.grid_forget()
-    button12.grid_forget()
-    button13.grid_forget()
-    button14.grid_forget()
-    button15.grid_forget()
-    button16.grid_forget()
-    button17.grid_forget()
-    button18.grid_forget()
-
-def show_buttons():
-    button7.grid(row=1, column=0, ipady=10, pady=10, padx=5)
-    button8.grid(row=1, column=1, ipady=10, pady=10, padx=5)
-    button9.grid(row=1, column=2, ipady=10, pady=10, padx=5)
-    button10.grid(row=1, column=3, ipady=10, pady=10, padx=5)
-    button11.grid(row=1, column=4, ipady=10, pady=10, padx=5)
-    button12.grid(row=1, column=5, ipady=10, pady=10, padx=5)
-    button13.grid(row=2, column=0, ipady=10, pady=10, padx=5)
-    button14.grid(row=2, column=1, ipady=10, pady=10, padx=5)
-    button15.grid(row=2, column=2, ipady=10, pady=10, padx=5)
-    button16.grid(row=2, column=3, ipady=10, pady=10, padx=5)
-    button17.grid(row=2, column=4, ipady=10, pady=10, padx=5)
-    button18.grid(row=2, column=5, ipady=10, pady=10, padx=5)
-
-import time
-def display_tracks():
-    hide_buttons()
-    print("Buttons have been hidden")
-    time.sleep(5)
-    show_buttons()
-
-
-"""
-def display_cup():
-    #display the correct maps for their respected cups
-    tables = [tracks]
-    cup = ['cup']
-    columns = ['']
-"""
-
 root = tk.Tk()
 root.title("Pareto Efficiency Stats")
 root.geometry("1366x768")
 root.protocol("WM_DELETE_WINDOW", root.quit)
 
 button1 = ctk.CTkButton(master=root, text="Charater Classes (by weight)", width=190, height=40, command=hmap_char_class)
-button1.grid(row=0, column=0, ipady=10, pady=10, padx=5)
+button1.pack(pady=5)
 
 button2 = ctk.CTkButton(master=root, text="Body/Tire Stats", width=190, height=40, command=hmap_part_class)
-button2.grid(row=0, column=1, ipady=10, pady=10, padx=5)
+button2.pack(pady=5)
 
 button3 = ctk.CTkButton(master=root, text="Pareto Frontier", width=190, height=40, command=pareto_frontier)
-button3.grid(row=0, column=2, ipady=10, pady=10, padx=5)
+button3.pack(pady=5)
 
 button4 = ctk.CTkButton(master=root, text="Interactive Graph", width=190, height=40, command=interactive_graph)
-button4.grid(row=0, column=3, ipady=10, pady=10, padx=5)
+button4.pack(pady=5)
 
 button5 = ctk.CTkButton(master=root, text="Combos", width=190, height=40, command=combos)
-button5.grid(row=0, column=4, ipady=10, pady=10, padx=5)
+button5.pack(pady=5)
 
 button6 = ctk.CTkButton(master=root, text="All Classes", width=190, height=40, command=categories)
-#button6.pack(pady=5)
-button6.grid(row=0, column=5, ipady=10, pady=10, padx=5)
+button6.pack(pady=5)
 
 # All track buttons
 mushroom_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_MushroomCup.png"))
-button7 = tk.Button(root, image=mushroom_cup_icon, width=128, height=128, borderwidth=0, command=display_tracks)
-button7.grid(row=1, column=0, ipady=10, pady=10, padx=5)
+button7 = tk.Button(root, image=mushroom_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+button7.place(x=50, y=320)
 
 flower_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_FlowerCup.png"))
-button8 = tk.Button(root, image=flower_cup_icon, width=128, height=128, borderwidth=0, command=show_buttons)
-button8.grid(row=1, column=1, ipady=10, pady=10, padx=5)
+button8 = tk.Button(root, image=flower_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+button8.place(x=200, y=320)
 
 star_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Star_Cup.png"))
 button9 = tk.Button(root, image=star_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
-button9.grid(row=1, column=2, ipady=10, pady=10, padx=5)
+button9.place(x=350, y=320)
 
 special_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Special_Cup.png"))
 button10 = tk.Button(root, image=special_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
-button10.grid(row=1, column=3, ipady=10, pady=10, padx=5)
+button10.place(x=500, y=320)
 
-egg_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Egg_Cup.png").resize((128,128), Image.Resampling.BICUBIC))
+egg_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Egg_Cup.png"))
 button11 = tk.Button(root, image=egg_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
-button11.grid(row=1, column=4, ipady=10, pady=10, padx=5)
+button11.place(x=650, y=320)
 
-crossing_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Crossing_Cup.png").resize((128,128), Image.Resampling.BICUBIC))
+crossing_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Crossing_Cup.png"))
 button12 = tk.Button(root, image=crossing_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
-button12.grid(row=1, column=5, ipady=10, pady=10, padx=5)
+button12.place(x=800, y=320)
 
 shell_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Shell_Cup.png"))
 button13 = tk.Button(root, image=shell_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
-button13.grid(row=2, column=0, ipady=10, pady=10, padx=5)
+button13.place(x=50, y=450)
 
 banana_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Banana_Cup.png"))
 button14 = tk.Button(root, image=banana_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
-button14.grid(row=2, column=1, ipady=10, pady=10, padx=5)
+button14.place(x=200, y=450)
 
 leaf_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Leaf_Cup.png"))
 button15 = tk.Button(root, image=leaf_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
-button15.grid(row=2, column=2, ipady=10, pady=10, padx=5)
+button15.place(x=350, y=450)
 
 lightning_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Lightning_Cup.png"))
 button16 = tk.Button(root, image=lightning_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
-button16.grid(row=2, column=3, ipady=10, pady=10, padx=5)
+button16.place(x=500, y=450)
 
-triforce_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Triforce_Cup.png").resize((128,128), Image.Resampling.BICUBIC))
+triforce_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Triforce_Cup.png"))
 button17 = tk.Button(root, image=triforce_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
-button17.grid(row=2, column=4, ipady=10, pady=10, padx=5)
+button17.place(x=650, y=450)
 
-bell_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Bell_Cup.png").resize((128,128), Image.Resampling.BICUBIC))
+bell_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Bell_Cup.png"))
 button18 = tk.Button(root, image=bell_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
-button18.grid(row=2, column=5, ipady=10, pady=10, padx=5)
+button18.place(x=800, y=450)
 
 root.mainloop()

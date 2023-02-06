@@ -5,13 +5,15 @@ import customtkinter as ctk
 from PIL import ImageTk, Image
 
 def button1_clicked():
-    print("Button 1 clicked")
+    button1.pack_forget()
+    button2.pack_forget()
 
 def button2_clicked():
     print("Button 2 clicked")
 
 def button3_clicked():
-    print("Button 3 clicked")
+    button1.pack()
+    button2.pack()
 
 def button4_clicked():
     print("Button 4 clicked")
@@ -33,13 +35,13 @@ mushroom_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/Paret
 button1 = tk.Button(root, image=mushroom_cup_icon, width=128, height=128, command=button1_clicked)
 button1.pack()
 
-"""
+
 button2 = tk.Button(root, text="Button 2", command=button2_clicked)
 button2.pack()
 
 button3 = tk.Button(root, text="Button 3", command=button3_clicked)
 button3.pack()
-
+"""
 button4 = tk.Button(root, text="Button 4", command=button4_clicked)
 button4.pack()
 
