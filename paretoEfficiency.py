@@ -16,6 +16,62 @@ from sklearn.cluster import KMeans
 
 sns.set_context('talk')
 
+import os
+
+# Image Files
+img_files = {
+    'Mario Kart Stadium': r'mario_kart_stadium.png',
+    'Water Park': 'water_park.png',
+    'Sweet Sweet Canyon': 'sweet_sweet_canyon.png',
+    'Thwomp Ruins': 'thwomp_ruins.png'
+}
+"""
+    'Mario Circuit':
+    'Toad Harbor':
+    'Twisted Mansion':
+    'Shy Guy Falls':
+    'Sunshine Airport':
+    'Dolphin Shoals':
+    'Electrodrome':
+    'Mount Wario':
+    'Cloudtop Cruise':
+    'Bone-Dry Dunes':
+    'Bowser\'s Castle':
+    'Rainbow Road':
+    'Wii Moo Moo Meadows':
+    'GBA Mario Circuit':
+    'DS Cheep Cheep Beach':
+    'N64 Toad\'s Turnpike':
+    'GCN Dry Dry Desert':
+    'SNES Donut Plains 3':
+    'N64 Royal Raceway':
+    '3DS DK Jungle':
+    'DS Wario Stadium':
+    'GCN Sherbet Land':
+    '3DS Music Park':
+    'N64 Yoshi Valley':
+    'DS Tick-Tock Clock':
+    '3DS Piranha Plant Slide':
+    'Wii Grumble Volcano':
+    'N64 Rainbow Road':
+    'GCN Yoshi Circuit':
+    'Excitebike Arena':
+    'Dragon Driftway':
+    'Mute City':
+    'Wii Wario\'s Gold Mine':
+    'SNES Rainbow Road':
+    'Ice Ice Outpost':
+    'Hyrule Circuit':
+    'GCN Baby Park':
+    'GBA Cheese Land':
+    'Wild Woods':
+    'Animal Crossing':
+    '3DS Neo Bowser City':
+    'GBA Ribbon Road':
+    'Super Bell Subway':
+    'Big Blue':
+}
+"""
 
 # originally from https://github.com/woodnathan/MarioKart8-Stats, added DLC and fixed a few typos
 bodies = pd.read_csv('bodies.csv')
@@ -203,27 +259,25 @@ def show_buttons():
     button18.grid(row=2, column=5, ipady=10, pady=10, padx=5)
 
 import time
-def display_tracks():
-    hide_buttons()
-    print("Buttons have been hidden")
-    time.sleep(5)
-    show_buttons()
+def display_tracks(key):
+    button_array = []
+    track_list = tracks[tracks.Cup == key]
+    track_list = track_list["Track"]
+    for x in track_list:
+        my_img = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/Tracks/" + img_files[x]))
+        my_button = tk.Button(root, image=my_img)
+        button_array.append(my_button)
 
+    for i, button in enumerate(button_array):
+        button.grid(row=3, column=i)
 
-"""
-def display_cup():
-    #display the correct maps for their respected cups
-    tables = [tracks]
-    cup = ['cup']
-    columns = ['']
-"""
 
 root = tk.Tk()
 root.title("Pareto Efficiency Stats")
 root.geometry("1366x768")
 root.protocol("WM_DELETE_WINDOW", root.quit)
 
-button1 = ctk.CTkButton(master=root, text="Charater Classes (by weight)", width=190, height=40, command=hmap_char_class)
+button1 = ctk.CTkButton(master=root, text="Character Classes (by weight)", width=190, height=40, command=hmap_char_class)
 button1.grid(row=0, column=0, ipady=10, pady=10, padx=5)
 
 button2 = ctk.CTkButton(master=root, text="Body/Tire Stats", width=190, height=40, command=hmap_part_class)
@@ -242,13 +296,13 @@ button6 = ctk.CTkButton(master=root, text="All Classes", width=190, height=40, c
 #button6.pack(pady=5)
 button6.grid(row=0, column=5, ipady=10, pady=10, padx=5)
 
-# All track buttons
+# All cup buttons
 mushroom_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_MushroomCup.png"))
-button7 = tk.Button(root, image=mushroom_cup_icon, width=128, height=128, borderwidth=0, command=display_tracks)
+button7 = tk.Button(root, image=mushroom_cup_icon, width=128, height=128, borderwidth=0, command=lambda: display_tracks("Mushroom"))
 button7.grid(row=1, column=0, ipady=10, pady=10, padx=5)
 
 flower_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_FlowerCup.png"))
-button8 = tk.Button(root, image=flower_cup_icon, width=128, height=128, borderwidth=0, command=show_buttons)
+button8 = tk.Button(root, image=flower_cup_icon, width=128, height=128, borderwidth=0, command=lambda: display_tracks("Flower"))
 button8.grid(row=1, column=1, ipady=10, pady=10, padx=5)
 
 star_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Star_Cup.png"))
