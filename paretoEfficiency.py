@@ -18,60 +18,107 @@ sns.set_context('talk')
 
 import os
 
-# Image Files
+# Image Files (pre-loaded)
+mushroom_mkc_path = r"images/179px-MK8_Mario_Kart_Stadium_Course_Icon.png"
+mushroom_wp_path = r"images/179px-MK8_Water_Park_Course_Icon.png"
+mushroom_ssc_path = r"images/179px-MK8_Sweet_Sweet_Canyon_Course_Icon.png"
+mushroom_tr_path = r"images/179px-MK8_Thwomp_Ruins_Course_Icon.png"
+flower_mc_path = r"images/179px-MK8_Mario_Circuit_Course_Icon.png"
+flower_th_path = r"images/179px-MK8_Toad_Harbor_Course_Icon.png"
+flower_tm_path = r"images/179px-MK8_Twisted_Mansion_Course_Icon.png"
+flower_sgf_path = r"images/179px-MK8_Shy_Guy_Falls_Course_Icon.png"
+star_sa_path = r"images/179px-MK8_Sunshine_Airport_Course_Icon.png"
+star_ds_path = r"images/179px-MK8_Dolphin_Shoals_Course_Icon.png"
+star_electro_path = r"images/179px-MK8_Electrodrome_Course_Icon.png"
+star_mw_path = r"images/179px-MK8_Mount_Wario_Course_Icon.png"
+speical_cc_path = r"images/179px-MK8_Cloudtop_Cruise_Course_Icon.png"
+speical_bdd_path = r"images/179px-MK8_Bone-Dry_Dunes_Course_Icon.png"
+speical_bc_path = r"images/179px-MK8_Bowser's_Castle_Course_Icon.png"
+speical_rr_path = r"images/179px-MK8_Rainbow_Road_Course_Icon.png"
+shell_mmm_path = r"images/179px-MK8_Wii_Moo_Moo_Meadows_Course_Icon.png"
+shell_GBA_mc_path = r"images/179px-MK8_GBA_Mario_Circuit_Course_Icon.png"
+shell_ccb_path = r"images/179px-MK8_DS_Cheep_Cheep_Beach_Course_Icon.png"
+shell_tt_path = r"images/179px-MK8_N64_Toad's_Turnpike_Course_Icon.png"
+banana_ddd_path = r"images/179px-MK8_GCN_Dry_Dry_Desert_Course_Icon.png"
+banana_dp3_path = r"images/179px-MK8_SNES_Donut_Plains_3_Course_Icon.png"
+banana_rr_path = r"images/179px-MK8_N64_Royal_Raceway_Course_Icon.png"
+banana_dkj_path = r"images/179px-MK8_3DS_DK_Jungle_Course_Icon.png"
+leaf_ws_path = r"images/179px-MK8_DS_Wario_Stadium_Course_Icon.png"
+leaf_sl_path = r"images/179px-MK8_GCN_Sherbet_Land_Course_Icon.png"
+leaf_mp_path = r"images/179px-MK8_3DS_Music_Park_Course_Icon.png"
+leaf_yv_path = r"images/179px-MK8_N64_Yoshi_Valley_Course_Icon.png"
+lightning_ttc_path = r"images/179px-MK8_DS_Tick-Tock_Clock_Course_Icon.png"
+lightning_pps_path = r"images/179px-MK8_3DS_Piranha_Plant_Slide_Course_Icon.png"
+lightning_gv_path = r"images/179px-MK8_Wii_Grumble_Volcano_Course_Icon.png"
+lightning_n64_rr_path = r"images/179px-MK8_N64_Rainbow_Road_Course_Icon.png"
+egg_yc_path = r"images/179px-MK8_GCN_Yoshi_Circuit_Course_Icon.png"
+egg_ea_path = r"images/179px-MK8_Excitebike_Arena_Course_Icon.png"
+egg_dd_path = r"images/179px-MK8_Dragon_Driftway_Course_Icon.png"
+egg_mc_path = r"images/179px-MK8_Mute_City_Course_Icon.png"
+triforce_wgm_path = r"images/179px-MK8_Wii_Wario's_Gold_Mine_Course_Icon.png"
+triforce_snes_rr_path = r"images/179px-MK8_SNES_Rainbow_Road_Course_Icon.png"
+triforce_iio_path = r"images/179px-MK8_Ice_Ice_Outpost_Course_Icon.png"
+triforce_hc_path = r"images/179px-MK8_Hyrule_Circuit_Course_Icon.png"
+crossing_bp_path = r"images/179px-MK8_GCN_Baby_Park_Course_Icon.png"
+crossing_cl_path = r"images/179px-MK8_GBA_Cheese_Land_Course_Icon.png"
+crossing_ww_path = r"images/179px-MK8_Wild_Woods_Course_Icon.png"
+crossing_ac_path = r"images/179px-MK8_Animal_Crossing_Course_Icon.png"
+bell_neb_path = r"images/179px-MK8_3DS_Neo_Bowser_City_Course_Icon.png"
+bell_gba_rr_path = r"images/179px-MK8_GBA_Ribbon_Road_Course_Icon.png"
+bell_sbs_path = r"images/179px-MK8_Super_Bell_Subway_Course_Icon.png"
+bell_bb_path = r"images/179px-MK8_Big_Blue_Course_Icon.png"
+
+# Image Files Dict.
 img_files = {
-    'Mario Kart Stadium': r'mario_kart_stadium.png',
-    'Water Park': 'water_park.png',
-    'Sweet Sweet Canyon': 'sweet_sweet_canyon.png',
-    'Thwomp Ruins': 'thwomp_ruins.png'
+    'Mario Kart Stadium': mushroom_mkc_path,
+    'Water Park': mushroom_wp_path,
+    'Sweet Sweet Canyon': mushroom_ssc_path,
+    'Thwomp Ruins': mushroom_tr_path,
+    'Mario Circuit': flower_mc_path,
+    'Toad Harbor': flower_th_path,
+    'Twisted Mansion': flower_tm_path,
+    'Shy Guy Falls': flower_sgf_path,
+    'Sunshine Airport': star_sa_path,
+    'Dolphin Shoals': star_ds_path,
+    'Electrodrome': star_electro_path,
+    'Mount Wario': star_mw_path,
+    'Cloudtop Cruise': speical_cc_path,
+    'Bone-Dry Dunes': speical_bdd_path,
+    'Bowser\'s Castle': speical_bc_path,
+    'Rainbow Road': speical_rr_path,
+    'Wii Moo Moo Meadows': shell_mmm_path,
+    'GBA Mario Circuit': shell_GBA_mc_path,
+    'DS Cheep Cheep Beach': shell_ccb_path,
+    'N64 Toad\'s Turnpike':shell_tt_path,
+    'GCN Dry Dry Desert': banana_ddd_path,
+    'SNES Donut Plains 3': banana_dp3_path,
+    'N64 Royal Raceway': banana_rr_path,
+    '3DS DK Jungle': banana_dkj_path,
+    'DS Wario Stadium': leaf_ws_path,
+    'GCN Sherbet Land': leaf_sl_path,
+    '3DS Music Park': leaf_mp_path,
+    'N64 Yoshi Valley': leaf_yv_path,
+    'DS Tick-Tock Clock': lightning_ttc_path,
+    '3DS Piranha Plant Slide': lightning_pps_path,
+    'Wii Grumble Volcano': lightning_gv_path,
+    'N64 Rainbow Road': lightning_n64_rr_path,
+    'GCN Yoshi Circuit': egg_yc_path,
+    'Excitebike Arena': egg_ea_path,
+    'Dragon Driftway': egg_dd_path,
+    'Mute City': egg_mc_path,
+    'Wii Wario\'s Gold Mine': triforce_wgm_path,
+    'SNES Rainbow Road': triforce_snes_rr_path,
+    'Ice Ice Outpost': triforce_iio_path,
+    'Hyrule Circuit': triforce_hc_path,
+    'GCN Baby Park': crossing_bp_path,
+    'GBA Cheese Land': crossing_cl_path,
+    'Wild Woods': crossing_ww_path,
+    'Animal Crossing': crossing_ac_path,
+    '3DS Neo Bowser City': bell_neb_path,
+    'GBA Ribbon Road': bell_gba_rr_path,
+    'Super Bell Subway': bell_sbs_path,
+    'Big Blue': bell_bb_path
 }
-"""
-    'Mario Circuit':
-    'Toad Harbor':
-    'Twisted Mansion':
-    'Shy Guy Falls':
-    'Sunshine Airport':
-    'Dolphin Shoals':
-    'Electrodrome':
-    'Mount Wario':
-    'Cloudtop Cruise':
-    'Bone-Dry Dunes':
-    'Bowser\'s Castle':
-    'Rainbow Road':
-    'Wii Moo Moo Meadows':
-    'GBA Mario Circuit':
-    'DS Cheep Cheep Beach':
-    'N64 Toad\'s Turnpike':
-    'GCN Dry Dry Desert':
-    'SNES Donut Plains 3':
-    'N64 Royal Raceway':
-    '3DS DK Jungle':
-    'DS Wario Stadium':
-    'GCN Sherbet Land':
-    '3DS Music Park':
-    'N64 Yoshi Valley':
-    'DS Tick-Tock Clock':
-    '3DS Piranha Plant Slide':
-    'Wii Grumble Volcano':
-    'N64 Rainbow Road':
-    'GCN Yoshi Circuit':
-    'Excitebike Arena':
-    'Dragon Driftway':
-    'Mute City':
-    'Wii Wario\'s Gold Mine':
-    'SNES Rainbow Road':
-    'Ice Ice Outpost':
-    'Hyrule Circuit':
-    'GCN Baby Park':
-    'GBA Cheese Land':
-    'Wild Woods':
-    'Animal Crossing':
-    '3DS Neo Bowser City':
-    'GBA Ribbon Road':
-    'Super Bell Subway':
-    'Big Blue':
-}
-"""
 
 # originally from https://github.com/woodnathan/MarioKart8-Stats, added DLC and fixed a few typos
 bodies = pd.read_csv('bodies.csv')
@@ -79,13 +126,13 @@ chars = pd.read_csv('characters.csv')
 gliders = pd.read_csv('gliders.csv')
 tires = pd.read_csv('tires.csv')
 tracks = pd.read_csv('MK8DX-World-Record-Data.csv')
-
+"""
 # use only stock (non-DLC) characters / karts / tires
 chars = chars.loc[chars['DLC']==0]
 bodies = bodies.loc[bodies['DLC']==0]
 tires = tires.loc[tires['DLC']==0]
 gliders = gliders.loc[gliders['DLC']==0]
-
+"""
 stat_cols = bodies.columns[2:-1]
 main_cols = ['Weight','Speed','Acceleration','Handling','Traction']
 track_cols = ['Track', 'Character', 'Vehicle', 'Tires', 'Glider', 'Tilt']
@@ -105,7 +152,10 @@ bodies['body_class'] = KMeans(n_uniq_bodies, n_init=10).fit_predict(bodies[stat_
 tires['tire_class'] = KMeans(n_uniq_tires, n_init=10).fit_predict(tires[stat_cols])
 
 # change the character class labels so that they correspond to weight order
-char_class_dict = dict(zip([3, 0, 5, 4, 2, 6, 1], [0, 1, 2, 3, 4, 5, 6]))
+# for Non-DLC Stats:
+#char_class_dict = dict(zip([3, 0, 5, 4, 2, 6, 1], [0, 1, 2, 3, 4, 5, 6]))
+# for DLC Stats:
+char_class_dict = dict(zip([0, 3, 2, 7, 8, 4, 1, 6, 5], [0, 1, 2, 3, 4, 5, 6, 7, 8]))
 chars['char_class'] = chars['char_class'].apply(lambda c: char_class_dict[c])
 
 # only two types of gliders, one of which is pretty clearly just better
@@ -258,14 +308,16 @@ def show_buttons():
     button17.grid(row=2, column=4, ipady=10, pady=10, padx=5)
     button18.grid(row=2, column=5, ipady=10, pady=10, padx=5)
 
-import time
+images = []
 def display_tracks(key):
     button_array = []
-    track_list = tracks[tracks.Cup == key]
+    #track_list = tracks[tracks.Cup == key]
+    track_list = tracks.loc[tracks['Cup'] == key]
     track_list = track_list["Track"]
     for x in track_list:
-        my_img = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/Tracks/" + img_files[x]))
-        my_button = tk.Button(root, image=my_img)
+        track_img = ImageTk.PhotoImage(file=img_files[x])
+        images.append(track_img)
+        my_button = tk.Button(root, image=track_img)
         button_array.append(my_button)
 
     for i, button in enumerate(button_array):
@@ -297,52 +349,52 @@ button6 = ctk.CTkButton(master=root, text="All Classes", width=190, height=40, c
 button6.grid(row=0, column=5, ipady=10, pady=10, padx=5)
 
 # All cup buttons
-mushroom_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_MushroomCup.png"))
+mushroom_cup_icon = ImageTk.PhotoImage(Image.open(r"images/MK8_MushroomCup.png"))
 button7 = tk.Button(root, image=mushroom_cup_icon, width=128, height=128, borderwidth=0, command=lambda: display_tracks("Mushroom"))
 button7.grid(row=1, column=0, ipady=10, pady=10, padx=5)
 
-flower_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_FlowerCup.png"))
+flower_cup_icon = ImageTk.PhotoImage(Image.open(r"images/MK8_FlowerCup.png"))
 button8 = tk.Button(root, image=flower_cup_icon, width=128, height=128, borderwidth=0, command=lambda: display_tracks("Flower"))
 button8.grid(row=1, column=1, ipady=10, pady=10, padx=5)
 
-star_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Star_Cup.png"))
-button9 = tk.Button(root, image=star_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+star_cup_icon = ImageTk.PhotoImage(Image.open(r"images/MK8_Star_Cup_Emblem.png"))
+button9 = tk.Button(root, image=star_cup_icon, width=128, height=128, borderwidth=0, command=lambda: display_tracks("Star"))
 button9.grid(row=1, column=2, ipady=10, pady=10, padx=5)
 
-special_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Special_Cup.png"))
-button10 = tk.Button(root, image=special_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+special_cup_icon = ImageTk.PhotoImage(Image.open(r"images/MK8_Special_Cup_Emblem.png"))
+button10 = tk.Button(root, image=special_cup_icon, width=128, height=128, borderwidth=0, command=lambda: display_tracks("Speical"))
 button10.grid(row=1, column=3, ipady=10, pady=10, padx=5)
 
-egg_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Egg_Cup.png").resize((128,128), Image.Resampling.BICUBIC))
-button11 = tk.Button(root, image=egg_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+egg_cup_icon = ImageTk.PhotoImage(Image.open(r"images/MK8_Egg_Cup_Emblem.png").resize((128,128), Image.Resampling.BICUBIC))
+button11 = tk.Button(root, image=egg_cup_icon, width=128, height=128, borderwidth=0, command=lambda: display_tracks("Egg"))
 button11.grid(row=1, column=4, ipady=10, pady=10, padx=5)
 
-crossing_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Crossing_Cup.png").resize((128,128), Image.Resampling.BICUBIC))
-button12 = tk.Button(root, image=crossing_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+crossing_cup_icon = ImageTk.PhotoImage(Image.open(r"images/MK8_Crossing_Cup_Emblem.png").resize((128,128), Image.Resampling.BICUBIC))
+button12 = tk.Button(root, image=crossing_cup_icon, width=128, height=128, borderwidth=0, command=lambda: display_tracks("Crossing"))
 button12.grid(row=1, column=5, ipady=10, pady=10, padx=5)
 
-shell_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Shell_Cup.png"))
-button13 = tk.Button(root, image=shell_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+shell_cup_icon = ImageTk.PhotoImage(Image.open(r"images/MK8_Shell_Cup_Emblem.png"))
+button13 = tk.Button(root, image=shell_cup_icon, width=128, height=128, borderwidth=0, command=lambda: display_tracks("Shell"))
 button13.grid(row=2, column=0, ipady=10, pady=10, padx=5)
 
-banana_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Banana_Cup.png"))
-button14 = tk.Button(root, image=banana_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+banana_cup_icon = ImageTk.PhotoImage(Image.open(r"images/MK8_Banana_Cup_Emblem.png"))
+button14 = tk.Button(root, image=banana_cup_icon, width=128, height=128, borderwidth=0, command=lambda: display_tracks("Banana"))
 button14.grid(row=2, column=1, ipady=10, pady=10, padx=5)
 
-leaf_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Leaf_Cup.png"))
-button15 = tk.Button(root, image=leaf_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+leaf_cup_icon = ImageTk.PhotoImage(Image.open(r"images/MK8_Leaf_Cup_Emblem.png"))
+button15 = tk.Button(root, image=leaf_cup_icon, width=128, height=128, borderwidth=0, command=lambda: display_tracks("Leaf"))
 button15.grid(row=2, column=2, ipady=10, pady=10, padx=5)
 
-lightning_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Lightning_Cup.png"))
-button16 = tk.Button(root, image=lightning_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+lightning_cup_icon = ImageTk.PhotoImage(Image.open(r"images/MK8_Lightning_Cup_Emblem.png"))
+button16 = tk.Button(root, image=lightning_cup_icon, width=128, height=128, borderwidth=0, command=lambda: display_tracks("Lightning"))
 button16.grid(row=2, column=3, ipady=10, pady=10, padx=5)
 
-triforce_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Triforce_Cup.png").resize((128,128), Image.Resampling.BICUBIC))
-button17 = tk.Button(root, image=triforce_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+triforce_cup_icon = ImageTk.PhotoImage(Image.open(r"images/MK8_Triforce_Cup_Emblem.png").resize((128,128), Image.Resampling.BICUBIC))
+button17 = tk.Button(root, image=triforce_cup_icon, width=128, height=128, borderwidth=0, command=lambda: display_tracks("Triforce"))
 button17.grid(row=2, column=4, ipady=10, pady=10, padx=5)
 
-bell_cup_icon = ImageTk.PhotoImage(Image.open(r"/home/zabel/automation/ParetoEfficiency-MarioKart8/code/images/MK8_Bell_Cup.png").resize((128,128), Image.Resampling.BICUBIC))
-button18 = tk.Button(root, image=bell_cup_icon, width=128, height=128, borderwidth=0, command=hmap_char_class)
+bell_cup_icon = ImageTk.PhotoImage(Image.open(r"images/MK8_Bell_Cup_Emblem.png").resize((128,128), Image.Resampling.BICUBIC))
+button18 = tk.Button(root, image=bell_cup_icon, width=128, height=128, borderwidth=0, command=lambda: display_tracks("Bell"))
 button18.grid(row=2, column=5, ipady=10, pady=10, padx=5)
 
 root.mainloop()

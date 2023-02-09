@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7861957f-b4a0-4df5-afdf-8a688372c260" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/images/MK8_Banana_Cup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/MK8_Bell_Cup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/MK8_Crossing_Cup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/MK8_Egg_Cup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/MK8_FlowerCup.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/MK8_FlowerCup.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/MK8_Leaf_Cup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/MK8_Lightning_Cup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/MK8_MushroomCup.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/MK8_MushroomCup.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/MK8_Shell_Cup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/MK8_Special_Cup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/MK8_Star_Cup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/MK8_Triforce_Cup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paretoEfficiency.py" beforeDir="false" afterPath="$PROJECT_DIR$/paretoEfficiency.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/paretoEfficiency.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LNAgpZdNwx77Ifix0vNSF8f1LY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "//wsl$/Ubuntu/home/zabel/automation/ParetoEfficiency-MarioKart8/code",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu\home\zabel\automation\ParetoEfficiency-MarioKart8\code\images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="paretoEfficiency" type="PythonConfigurationType" factoryName="Python">
+      <module name="code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/paretoEfficiency.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7861957f-b4a0-4df5-afdf-8a688372c260" name="Changes" comment="" />
+      <created>1675701280832</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675701280832</updated>
+    </task>
+    <servers />
+  </component>
+</project>
