@@ -317,13 +317,27 @@ def display_tracks(key):
     for x in track_list:
         track_img = ImageTk.PhotoImage(file=img_files[x])
         images.append(track_img)
-        my_button = tk.Button(root, image=track_img)
+        my_button = tk.Button(root, image=track_img, borderwidth=0, command=lambda x=x: track_details(x))
         button_array.append(my_button)
 
     for i, button in enumerate(button_array):
         button.grid(row=3, column=i)
 
+def track_details(key):
+    # Track detail window
+    detail = tk.Tk()
+    detail.title("Track Details")
+    detail.geometry("1280x720")
 
+    # locate the details for the track
+    track_list = tracks.loc[tracks['Track'] == key]
+
+    # display track
+
+    print(key)
+
+
+# Main window
 root = tk.Tk()
 root.title("Pareto Efficiency Stats")
 root.geometry("1366x768")
