@@ -68,6 +68,56 @@ bell_gba_rr_path = r"images/179px-MK8_GBA_Ribbon_Road_Course_Icon.png"
 bell_sbs_path = r"images/179px-MK8_Super_Bell_Subway_Course_Icon.png"
 bell_bb_path = r"images/179px-MK8_Big_Blue_Course_Icon.png"
 
+#Track Maps
+mushroom_mkc_map = r"images/120px-MK8_Mario_Kart_Stadium_Map.png"
+mushroom_wp_map = r"images/120px-MK8_Water_Park_Map.png"
+mushroom_ssc_map = r"images/120px-MK8_Sweet_Sweet_Canyon_Map.png"
+mushroom_tr_map = r"images/120px-MK8_Thwomp_Ruins_Map.png"
+flower_mc_map = r"images/120px-MK8_"
+flower_th_map = r"images/120px-MK8_"
+flower_tm_map = r"images/120px-MK8_"
+flower_sgf_map = r"images/120px-MK8_"
+star_sa_map = r"images/120px-MK8_"
+star_ds_map = r"images/120px-MK8_"
+star_electro_map = r"images/120px-MK8_"
+star_mw_map = r"images/120px-MK8_"
+speical_cc_map = r"images/120px-MK8_"
+speical_bdd_map = r"images/120px-MK8_"
+speical_bc_map = r"images/120px-MK8_"
+speical_rr_map = r"images/120px-MK8_"
+shell_mmm_map = r"images/120px-MK8_"
+shell_GBA_mc_map = r"images/120px-MK8_"
+shell_ccb_map = r"images/120px-MK8_"
+shell_tt_map = r"images/120px-MK8_"
+banana_ddd_map = r"images/120px-MK8_"
+banana_dp3_map = r"images/120px-MK8_"
+banana_rr_map = r"images/120px-MK8_"
+banana_dkj_map = r"images/120px-MK8_"
+leaf_ws_map = r"images/120px-MK8_"
+leaf_sl_map = r"images/120px-MK8_"
+leaf_mp_map = r"images/120px-MK8_"
+leaf_yv_map = r"images/120px-MK8_"
+lightning_ttc_map = r"images/120px-MK8_"
+lightning_pps_map = r"images/120px-MK8_"
+lightning_gv_map = r"images/120px-MK8_"
+lightning_n64_rr_map = r"images/120px-MK8_"
+egg_yc_map = r"images/120px-MK8_"
+egg_ea_map = r"images/120px-MK8_"
+egg_dd_map = r"images/120px-MK8_"
+egg_mc_map = r"images/120px-MK8_"
+triforce_wgm_map = r"images/120px-MK8_"
+triforce_snes_rr_map = r"images/120px-MK8_"
+triforce_iio_map = r"images/120px-MK8_"
+triforce_hc_map = r"images/120px-MK8_"
+crossing_bp_map = r"images/120px-MK8_"
+crossing_cl_map = r"images/120px-MK8_"
+crossing_ww_map = r"images/120px-MK8_"
+crossing_ac_map = r"images/120px-MK8_"
+bell_neb_map = r"images/120px-MK8_"
+bell_gba_rr_map = r"images/120px-MK8_"
+bell_sbs_map = r"images/120px-MK8_"
+bell_bb_map = r"images/120px-MK8_"
+
 # Image Files Dict.
 img_files = {
     'Mario Kart Stadium': mushroom_mkc_path,
@@ -118,6 +168,58 @@ img_files = {
     'GBA Ribbon Road': bell_gba_rr_path,
     'Super Bell Subway': bell_sbs_path,
     'Big Blue': bell_bb_path
+}
+
+# Track Map image files
+track_maps = {
+    'Mario Kart Stadium': mushroom_mkc_map,
+    'Water Park': mushroom_wp_map,
+    'Sweet Sweet Canyon': mushroom_ssc_map,
+    'Thwomp Ruins': mushroom_tr_map,
+    'Mario Circuit': flower_mc_map,
+    'Toad Harbor': flower_th_map,
+    'Twisted Mansion': flower_tm_map,
+    'Shy Guy Falls': flower_sgf_map,
+    'Sunshine Airport': star_sa_map,
+    'Dolphin Shoals': star_ds_map,
+    'Electrodrome': star_electro_map,
+    'Mount Wario': star_mw_map,
+    'Cloudtop Cruise': speical_cc_map,
+    'Bone-Dry Dunes': speical_bdd_map,
+    'Bowser\'s Castle': speical_bc_map,
+    'Rainbow Road': speical_rr_map,
+    'Wii Moo Moo Meadows': shell_mmm_map,
+    'GBA Mario Circuit': shell_GBA_mc_map,
+    'DS Cheep Cheep Beach': shell_ccb_map,
+    'N64 Toad\'s Turnpike':shell_tt_map,
+    'GCN Dry Dry Desert': banana_ddd_map,
+    'SNES Donut Plains 3': banana_dp3_map,
+    'N64 Royal Raceway': banana_rr_map,
+    '3DS DK Jungle': banana_dkj_map,
+    'DS Wario Stadium': leaf_ws_map,
+    'GCN Sherbet Land': leaf_sl_map,
+    '3DS Music Park': leaf_mp_map,
+    'N64 Yoshi Valley': leaf_yv_map,
+    'DS Tick-Tock Clock': lightning_ttc_map,
+    '3DS Piranha Plant Slide': lightning_pps_map,
+    'Wii Grumble Volcano': lightning_gv_map,
+    'N64 Rainbow Road': lightning_n64_rr_map,
+    'GCN Yoshi Circuit': egg_yc_map,
+    'Excitebike Arena': egg_ea_map,
+    'Dragon Driftway': egg_dd_map,
+    'Mute City': egg_mc_map,
+    'Wii Wario\'s Gold Mine': triforce_wgm_map,
+    'SNES Rainbow Road': triforce_snes_rr_map,
+    'Ice Ice Outpost': triforce_iio_map,
+    'Hyrule Circuit': triforce_hc_map,
+    'GCN Baby Park': crossing_bp_map,
+    'GBA Cheese Land': crossing_cl_map,
+    'Wild Woods': crossing_ww_map,
+    'Animal Crossing': crossing_ac_map,
+    '3DS Neo Bowser City': bell_neb_map,
+    'GBA Ribbon Road': bell_gba_rr_map,
+    'Super Bell Subway': bell_sbs_map,
+    'Big Blue': bell_bb_map
 }
 
 # originally from https://github.com/woodnathan/MarioKart8-Stats, added DLC and fixed a few typos
@@ -330,11 +432,14 @@ def track_details(key):
     detail.geometry("1280x720")
 
     # locate the details for the track
-    track_list = tracks.loc[tracks['Track'] == key]
+    #track_list = tracks.loc[tracks['Track'] == key]
 
-    # display track
-
-    print(key)
+    # display track map
+    #print(track_maps[key])
+    img = ImageTk.PhotoImage(file=track_maps[key])
+    label = tk.Label(detail, image=img, width=120, height=120, borderwidth=0)
+    label.pack()
+    #print(key)
 
 
 # Main window
