@@ -68,55 +68,196 @@ bell_gba_rr_path = r"images/179px-MK8_GBA_Ribbon_Road_Course_Icon.png"
 bell_sbs_path = r"images/179px-MK8_Super_Bell_Subway_Course_Icon.png"
 bell_bb_path = r"images/179px-MK8_Big_Blue_Course_Icon.png"
 
-#Track Maps
+# Track Maps
 mushroom_mkc_map = r"images/120px-MK8_Mario_Kart_Stadium_Map.png"
 mushroom_wp_map = r"images/120px-MK8_Water_Park_Map.png"
 mushroom_ssc_map = r"images/120px-MK8_Sweet_Sweet_Canyon_Map.png"
 mushroom_tr_map = r"images/120px-MK8_Thwomp_Ruins_Map.png"
-flower_mc_map = r"images/120px-MK8_"
-flower_th_map = r"images/120px-MK8_"
-flower_tm_map = r"images/120px-MK8_"
-flower_sgf_map = r"images/120px-MK8_"
-star_sa_map = r"images/120px-MK8_"
-star_ds_map = r"images/120px-MK8_"
-star_electro_map = r"images/120px-MK8_"
-star_mw_map = r"images/120px-MK8_"
-speical_cc_map = r"images/120px-MK8_"
-speical_bdd_map = r"images/120px-MK8_"
-speical_bc_map = r"images/120px-MK8_"
-speical_rr_map = r"images/120px-MK8_"
-shell_mmm_map = r"images/120px-MK8_"
-shell_GBA_mc_map = r"images/120px-MK8_"
-shell_ccb_map = r"images/120px-MK8_"
-shell_tt_map = r"images/120px-MK8_"
-banana_ddd_map = r"images/120px-MK8_"
-banana_dp3_map = r"images/120px-MK8_"
-banana_rr_map = r"images/120px-MK8_"
-banana_dkj_map = r"images/120px-MK8_"
-leaf_ws_map = r"images/120px-MK8_"
-leaf_sl_map = r"images/120px-MK8_"
-leaf_mp_map = r"images/120px-MK8_"
-leaf_yv_map = r"images/120px-MK8_"
-lightning_ttc_map = r"images/120px-MK8_"
-lightning_pps_map = r"images/120px-MK8_"
-lightning_gv_map = r"images/120px-MK8_"
-lightning_n64_rr_map = r"images/120px-MK8_"
-egg_yc_map = r"images/120px-MK8_"
-egg_ea_map = r"images/120px-MK8_"
-egg_dd_map = r"images/120px-MK8_"
-egg_mc_map = r"images/120px-MK8_"
-triforce_wgm_map = r"images/120px-MK8_"
-triforce_snes_rr_map = r"images/120px-MK8_"
-triforce_iio_map = r"images/120px-MK8_"
-triforce_hc_map = r"images/120px-MK8_"
-crossing_bp_map = r"images/120px-MK8_"
-crossing_cl_map = r"images/120px-MK8_"
-crossing_ww_map = r"images/120px-MK8_"
-crossing_ac_map = r"images/120px-MK8_"
-bell_neb_map = r"images/120px-MK8_"
-bell_gba_rr_map = r"images/120px-MK8_"
-bell_sbs_map = r"images/120px-MK8_"
-bell_bb_map = r"images/120px-MK8_"
+flower_mc_map = r"images/120px-MK8_Mario_Circuit_Map.png"
+flower_th_map = r"images/120px-MK8_Toad_Harbor_Map.png"
+flower_tm_map = r"images/120px-MK8_Twisted_Mansion_Map.png"
+flower_sgf_map = r"images/120px-MK8_Shy_Guy_Falls_Map.png"
+star_sa_map = r"images/120px-MK8_Sunshine_Airport_Map.png"
+star_ds_map = r"images/120px-MK8_Dolphin_Shoals_Map.png"
+star_electro_map = r"images/120px-MK8_Electrodrome_Map.png"
+star_mw_map = r"images/120px-MK8_Mount_Wario_Map.png"
+speical_cc_map = r"images/120px-MK8_Cloudtop_Cruise_Map.png"
+speical_bdd_map = r"images/120px-MK8_Bone-Dry_Dunes_Map.png"
+speical_bc_map = r"images/120px-MK8_Bowser's_Castle_Map.png"
+speical_rr_map = r"images/120px-MK8_Rainbow_Road_Map.png"
+shell_mmm_map = r"images/120px-MK8_Wii_Moo_Moo_Meadows_Map.png"
+shell_GBA_mc_map = r"images/120px-MK8_GBA_Mario_Circuit_Map.png"
+shell_ccb_map = r"images/120px-MK8_DS_Cheep_Cheep_Beach_Map.png"
+shell_tt_map = r"images/120px-MK8_N64_Toad's_Turnpike_Map.png"
+banana_ddd_map = r"images/120px-MK8_GCN_Dry_Dry_Desert_Map.png"
+banana_dp3_map = r"images/120px-MK8_SNES_Donut_Plains_3_Map.png"
+banana_rr_map = r"images/120px-MK8_N64_Royal_Raceway_Map.png"
+banana_dkj_map = r"images/120px-MK8_3DS_DK_Jungle_Map.png"
+leaf_ws_map = r"images/120px-MK8_DS_Wario_Stadium_Map.png"
+leaf_sl_map = r"images/120px-MK8_GCN_Sherbet_Land_Map.png"
+leaf_mp_map = r"images/120px-MK8_3DS_Music_Park_Map.png"
+leaf_yv_map = r"images/120px-MK8_N64_Yoshi_Valley_Map.png"
+lightning_ttc_map = r"images/120px-MK8_DS_Tick-Tock_Clock_Map.png"
+lightning_pps_map = r"images/120px-MK8_3DS_Piranha_Plant_Slide_Map.png"
+lightning_gv_map = r"images/120px-MK8_Wii_Grumble_Volcano_Map.png"
+lightning_n64_rr_map = r"images/120px-MK8_N64_Rainbow_Road_Map.png"
+egg_yc_map = r"images/120px-MK8_GCN_Yoshi_Circuit_Map.png"
+egg_ea_map = r"images/120px-MK8_Excitebike_Arena_Map.png"
+egg_dd_map = r"images/120px-MK8_Dragon_Driftway_Map.png"
+egg_mc_map = r"images/120px-MK8_Mute_City_Map.png"
+triforce_wgm_map = r"images/120px-MK8_Wii_Wario's_Gold_Mine_Map.png"
+triforce_snes_rr_map = r"images/120px-MK8_SNES_Rainbow_Road_Map.png"
+triforce_iio_map = r"images/120px-MK8_Ice_Ice_Outpost_Map.png"
+triforce_hc_map = r"images/120px-MK8_Hyrule_Circuit_Map.png"
+crossing_bp_map = r"images/120px-MK8_GCN_Baby_Park_Map.png"
+crossing_cl_map = r"images/120px-MK8_GBA_Cheese_Land_Map.png"
+crossing_ww_map = r"images/120px-MK8_Wild_Woods_Map.png"
+crossing_ac_map = r"images/120px-MK8_Animal_Crossing_Map.png"
+bell_neb_map = r"images/120px-MK8_3DS_Neo_Bowser_City_Map.png"
+bell_gba_rr_map = r"images/120px-MK8_GBA_Ribbon_Road_Map.png"
+bell_sbs_map = r"images/120px-MK8_Super_Bell_Subway_Map.png"
+bell_bb_map = r"images/120px-MK8_Big_Blue_Map.png"
+
+# Chars Images
+shyguy = r"images/MK8_ShyGuy_Icon.png"
+bowser = r"images/MK8_Bowser_Icon.png"
+link = r"images/MK8_Link_Icon.png"
+yoshi = r"images/MK8_Yoshi_Icon.png"
+babyDaisy = r"images/MK8_BabyDaisy_Icon.png"
+babyRosalina = r"images/MK8_BabyRosalina_Icon.png"
+blueShyguy = r"images/MK8_Blue_Shy_Guy_Icon.png"
+babyPeach = r"images/MK8_BabyPeach_Icon.png"
+wario = r"images/MK8_Wario_Icon.png"
+ludwig = r"images/MK8_Ludwig_Icon.png"
+toad = r"images/MK8_Toad_Icon.png"
+luigi = r"images/MK8_Luigi_Icon.png"
+catPeach = r"images/MK8_Cat_Peach_Icon.png"
+furryMario = r"images/MK8_Tanooki_Mario_Icon.png"
+lightblueYoshi = r"images/MK8_Light-Blue_Yoshi_Icon.png"
+dKong = r"images/MK8_DKong_Icon.png"
+dryBowser = r"images/MK8_Dry_Bowser_Icon.png"
+girl = r"images/MK8_Isabelle_Icon.png"
+pinkShyguy = r"images/MK8_Pink_Shy_Guy_Icon.png"
+greenShyguy = r"images/MK8_Green_Shy_Guy_Icon.png"
+goldPeach = r"images/MK8_PGPeach_Icon.png"
+rosalina = r"images/MK8_Rosalina_Icon.png"
+orangeShyguy = r"images/MK8_Orange_Shy_Guy_Icon.png"
+blackShyguy = r"images/MK8_Black_Shy_Guy_Icon.png"
+lakitu = r"images/MK8_Lakitu_Icon.png"
+orangeYoshi = r"images/MK8_Orange_Yoshi_Icon.png"
+whiteYoshi = r"images/MK8_White_Yoshi_Icon.png"
+metalMario = r"images/MK8_MMario_Icon.png"
+redYoshi = r"images/MK8_Red_Yoshi_Icon.png"
+pinkYoshi = r"images/MK8_Pink_Yoshi_Icon.png"
+peach = r"images/MK8_Peach_Icon.png"
+lemmy = r"images/MK8_Lemmy_Icon.png"
+wendy = r"images/MK8_Wendy_Icon.png"
+mario = r"images/MK8_Mario_Icon.png"
+yellowShyguy = r"images/MK8_Yellow_Shy_Guy_Icon.png"
+whiteShyguy = r"images/MK8_White_Shy_Guy_Icon.png"
+babyMario = r"images/MK8_BabyMario_Icon.png"
+blackYoshi = r"images/MK8_Black_Yoshi_Icon.png"
+roy = r"images/MK8_Roy_Icon.png"
+babyLuigi = r"images/MK8_BabyLuigi_Icon.png"
+lightblueShyguy = r"images/MK8_Light-Blue_Shy_Guy_Icon.png"
+yellowYoshi = r"images/MK8_Yellow_Yoshi_Icon.png"
+morton = r"images/MK8_Morton_Icon.png"
+girlToad = r"images/MK8_Toadette_Icon.png"
+daisy = r"images/MK8_Daisy_Icon.png"
+blueYoshi = r"images/MK8_Blue_Yoshi_Icon.png"
+sexyman = r"images/MK8_Waluigi_Icon.png"
+iggy = r"images/MK8_Iggy_Icon.png"
+koopatroopa = r"images/MK8_Koopa_Icon.png"
+larry = r"images/MK8_Larry_Icon.png"
+mii = r"images/Mii_MK8.png"
+goldMario = r"images/120px-MK8DX_Gold_Mario_Icon.png"
+boyVillager = r"images/deluxe/MK8DX_Male_Villager.png"
+girlVillager = r"images/deluxe/MK8DX_Female_Villager.png"
+furryPeach = r"images/deluxe/MK8DX_Cat_Peach_Icon.png"
+
+# Body files
+standard_kart = r"images/120px-StandardKartBodyMK8.png"
+pipe_frame = r"images/120px-PipeFrameBodyMK8.png"
+mach_8 = r"images/120px-Mach8BodyMK8.png"
+steel_driver = r"images/120px-Steel_Driver.png"
+cat_cruiser = r"images/120px-CatCruiserBodyMK8.png"
+circuit_special = r"images/120px-CircuitSpecialBodyMK8.png"
+tri_speeder = r"images/120px-TrispeederBodyMK8.png"
+badwagon = r"images/120px-BadwagonBodyMK8.png"
+prancer = r"images/120px-PrancerBodyMK8.png"
+biddybuggy = r"images/120px-BiddybuggyBodyMK8.png"
+landshit = r"images/120px-LandshipBodyMK8.png"
+sneaker = r"images/120px-SneakerBodyMK8.png"
+sports_coupe = r"images/120px-SportsCoupeMK8.png"
+gold_standart = r"images/120px-Gold_Standard.png"
+gla = r"images/120px-GLA-MK8.png"
+silver_arrow = r"images/120px-W25SilverArrow-MK8.png"
+roadster = r"images/120px-300SLRoadster_MK8.png"
+blue_falcon = r"images/120px-MK8BlueFalcon.png"
+dasher = r"images/120px-ZeldaMK8Bdasher.png"
+tanooki_kart = r"images/120px-MK8_Tanooki_Buggy_Sprite.png"
+streetle = r"images/120px-MK8Streetle.png"
+p_wing = r"images/120px-MK8PWing.png"
+standard_bike = r"images/120px-StandardBikeBodyMK8.png"
+comet = r"images/120px-CometBodyMK8.png"
+sport_bike = r"images/120px-SportBikeBodyMK8.png"
+duke = r"images/120px-TheDukeBodyMK8.png"
+flame_rider = r"images/120px-FlameRiderBodyMK8.png"
+varmit = r"images/120px-VarmintBodyMK8.png"
+mr_scooty = r"images/120px-MrScootyBodyMK8.png"
+jet_bike = r"images/120px-JetBikeBodyMK8.png"
+yoshi_bike = r"images/120px-YoshiBikeBodyMK8.png"
+master_cycle = r"images/120px-MK8MasterCycle.png"
+city_tripper = r"images/120px-MK8_Light-Green_City_Tripper.png"
+standard_atv = r"images/120px-StandardATVBodyMK8.png"
+wild_wiggler = r"images/120px-WildWigglerBodyMK8.png"
+teddy_buggy = r"images/120px-TeddyBuggyBodyMK8.png"
+bone_ratter = r"images/120px-MK8BoneRattler.png"
+koopa_clown = r"images/deluxe/120px-MK8DX_Koopa_Clown.png"
+master_cycle_zero = r"images/deluxe/120px-MK8D_Master_Cycle_Zero.png"
+splat_buddy = r"images/deluxe/120px-MK8DX_Splat_Buggy.png"
+inkstriker = r"images/deluxe/120px-MK8DX_Inkstriker.png"
+
+# Tire files
+standard_tires = r"images/120px-StandardTiresMK8.png"
+monster_tires = r"images/120px-MonsterTiresMK8.png"
+roller_tires = r"images/120px-RollerTiresMK8.png"
+slim_tires = r"images/120px-SlimTiresMK8.png"
+slick_tires = r"images/120px-SlickTiresMK8.png"
+metal_tires = r"images/120px-MetalTiresMK8.png"
+button_tires = r"images/120px-ButtonTiresMK8.png"
+off_road_tires = r"images/120px-Off-Road.png"
+sponge_tires = r"images/120px-SpongeTiresMK8.png"
+wood_tires = r"images/120px-WoodTiresMK8.png"
+cushion_tires = r"images/120px-CushionTiresMK8.png"
+blue_standard_tires = r"images/120px-Blue_Standard.png"
+hot_monster_tires = r"images/120px-HotMonsterTiresMK8.png"
+azure_roller_tires = r"images/120px-AzureRollerTiresMK8.png"
+crimson_slim_tires = r"images/120px-CrimsonSlimTiresMK8.png"
+cyber_slick_tires = r"images/120px-CyberSlickTiresMK8.png"
+retro_off_road_tires = r"images/120px-Retro_Off-Road.png"
+gold_tires = r"images/120px-Gold_Tires_MK8.png"
+gla_tires = r"images/120px-GLATires-MK8.png"
+triforce_tires = r"images/120px-MK8-TriforceTires.png"
+leaf_tires = r"images/120px-Leaf_Tires_MK8.png"
+ancient_tires = r"images/deluxe/120px-MK8D_Ancient_Tires.png"
+
+# Glider files
+super_glider = r"images/120px-SuperGliderMK8.png"
+cloud_glider = r"images/120px-Cloud_Glider.png"
+wario_wing = r"images/120px-WarioWingMK8.png"
+waddle_wing = r"images/120px-WaddleWingMK8.png"
+peach_parasol = r"images/120px-PeachParasolGliderMK8.png"
+parachute = r"images/120px-ParachuteGliderMK8.png"
+parafoil = r"images/120px-ParafoilGliderMK8.png"
+flower_glider = r"images/120px-FlowerGliderMK8.png"
+bowser_kite = r"images/120px-BowserKiteMK8.png"
+plane_glider = r"images/120px-PlaneGliderMK8.png"
+mktv_parafoil = r"images/120px-MKTVParafoilGliderMK8.png"
+gold_glider = r"images/120px-GoldGliderMK8.png"
+hylian_kite = r"images/120px-MK8-HylianKite.png"
+paper_glider = r"images/120px-PaperGliderIcon-MK8.png"
+paraglider = r"images/deluxe/120px-MK8D_Paraglider.png"
 
 # Image Files Dict.
 img_files = {
@@ -220,6 +361,133 @@ track_maps = {
     'GBA Ribbon Road': bell_gba_rr_map,
     'Super Bell Subway': bell_sbs_map,
     'Big Blue': bell_bb_map
+}
+
+chars_dict = {
+    'Baby Mario': babyMario,
+    'Baby Luigi': babyLuigi,
+    'Baby Peach': babyPeach,
+    'Baby Daisy': babyDaisy,
+    'Baby Rosalina': babyRosalina,
+    'Lemmy Koopa': lemmy,
+    'Light Mii': mii,
+    'Toad': toad,
+    'Shy Guy': shyguy,
+    'Koopa Troopa': koopatroopa,
+    'Lakitu': lakitu,
+    'Wendy': wendy,
+    'Larry': larry,
+    'Toadette': girlToad,
+    'Peach': peach,
+    'Daisy': daisy,
+    'Yoshi': yoshi,
+    'Mario': mario,
+    'Luigi': luigi,
+    'Iggy': iggy,
+    'Ludwig': ludwig,
+    'Medium Mii': mii,
+    'Donkey Kong': dKong,
+    'Waluigi': sexyman,
+    'Rosalina': rosalina,
+    'Roy Koopa': roy,
+    'Metal Mario': metalMario,
+    'Pink Gold Peach': goldPeach,
+    'Wario': wario,
+    'Bowser': bowser,
+    'Morton': morton,
+    'Heavy Mii': mii,
+    'Tanooki Mario': furryMario,
+    'Male Villager': boyVillager,
+    'Cat Peach': furryPeach,
+    'Female Villager': girlVillager,
+    'Isabelle': girl,
+    'Dry Bowser': dryBowser,
+    'Link': link,
+    'Heavy Mii Toad': mii,
+    'Heavy Mii CptFal': mii
+}
+
+body_dict = {
+    'Standard Kart': standard_kart,
+    'Prancer': prancer,
+    'Cat Cruiser': cat_cruiser,
+    'Sneeker': sneaker,
+    'Gold Standard': gold_standart,
+    'Mach 8': mach_8,
+    'Circuit Special': circuit_special,
+    'Sports Coupe': sports_coupe,
+    'Badwagon': badwagon,
+    'TriSpeeder': tri_speeder,
+    'Steel Driver': steel_driver,
+    'Biddybuggy': biddybuggy,
+    'Landship': landshit,
+    'Pipe Frame': pipe_frame,
+    'The Duke': duke,
+    'Mr. Scooty': mr_scooty,
+    'Standard Bike': standard_bike,
+    'Flame Ride': flame_rider,
+    'Varmit': varmit,
+    'Sports Bike': sport_bike,
+    'Jet Bike': jet_bike,
+    'Comet': comet,
+    'Yoshi Bike': yoshi_bike,
+    'Teddy Buggy': teddy_buggy,
+    'Wild Wiggler': wild_wiggler,
+    'Standard ATV': standard_atv,
+    'GLA': gla,
+    'W 25 Silver Arrow': silver_arrow,
+    '300 SL Roadster': roadster,
+    'Blue Falcon': blue_falcon,
+    'Tanooki Kart': tanooki_kart,
+    'B Dasher': dasher,
+    'Streetle': streetle,
+    'P-Wing': p_wing,
+    'Master Cycle': master_cycle,
+    'City Tripper': city_tripper,
+    'Bone Rattler': bone_ratter
+}
+
+tire_dict = {
+    'Standard': standard_tires,
+    'Blue Standard': blue_standard_tires,
+    'Offroad': off_road_tires,
+    'Retro Offroad': retro_off_road_tires,
+    'Monster': monster_tires,
+    'Hot Monster': hot_monster_tires,
+    'Slick': slick_tires,
+    'Cyber Slick': cyber_slick_tires,
+    'Roller': roller_tires,
+    'Azure Roller': azure_roller_tires,
+    'Button': button_tires,
+    'Slim': slim_tires,
+    'Crimson Slim': crimson_slim_tires,
+    'Metal': metal_tires,
+    'Gold': gold_tires,
+    'Wood': wood_tires,
+    'Sponge': sponge_tires,
+    'Cushion': cushion_tires,
+    'GLA Tires': gla_tires,
+    'Triforce Tires': triforce_tires,
+    'Leaf Tires': leaf_tires,
+    'Ancient Tires': ancient_tires
+}
+
+glider_dict = {
+    'Super Glider': super_glider,
+    'Waddle Wing': waddle_wing,
+    'Plane Glider': plane_glider,
+    'Wario Wing': wario_wing,
+    'Gold Glider': gold_glider,
+    'Flower Glider': flower_glider,
+    'Peach Parasol': peach_parasol,
+    'Parachute': parachute,
+    'Parafoil': parafoil,
+    'MKTV Parafoil': mktv_parafoil,
+    'Bowser Kite': bowser_kite,
+    'Cloud Glider': cloud_glider,
+    'Hylian Kite': hylian_kite,
+    'Paper Glider': paper_glider,
+    'Paraglider': paraglider
 }
 
 # originally from https://github.com/woodnathan/MarioKart8-Stats, added DLC and fixed a few typos
@@ -427,19 +695,52 @@ def display_tracks(key):
 
 def track_details(key):
     # Track detail window
-    detail = tk.Tk()
+    detail = tk.Toplevel()
     detail.title("Track Details")
-    detail.geometry("1280x720")
+    detail.geometry("720x720")
+
+    map_text_label = tk.Label(detail, text="Track Map")
+    map_text_label.grid(row=0, column=0)
+    char_text_label = tk.Label(detail, text="Character")
+    char_text_label.grid(row=0, column=1)
+    body_text_label = tk.Label(detail, text="Body")
+    body_text_label.grid(row=0, column=2)
+    tires_text_label = tk.Label(detail, text="Tires")
+    tires_text_label.grid(row=0, column=3)
+    glider_text_label = tk.Label(detail, text="Glider")
+    glider_text_label.grid(row=0, column=4)
 
     # locate the details for the track
-    #track_list = tracks.loc[tracks['Track'] == key]
+    track_list = tracks.loc[tracks['Track'] == key]
+    character = track_list['Character'].iloc[0]
+    body = track_list['Vehicle'].iloc[0]
+    tire = track_list['Tires'].iloc[0]
+    glider = track_list['Glider'].iloc[0]
+
 
     # display track map
-    #print(track_maps[key])
-    img = ImageTk.PhotoImage(file=track_maps[key])
-    label = tk.Label(detail, image=img, width=120, height=120, borderwidth=0)
-    label.pack()
-    #print(key)
+    map_img = ImageTk.PhotoImage(file=track_maps[key])
+    char_img = ImageTk.PhotoImage(file=chars_dict[character])
+    body_img = ImageTk.PhotoImage(file=body_dict[body])
+    tire_img = ImageTk.PhotoImage(file=tire_dict[tire])
+    glider_img = ImageTk.PhotoImage(file=glider_dict[glider])
+
+
+    map_label = tk.Label(detail, image=map_img, borderwidth=0)
+    char_label = tk.Label(detail, image=char_img, borderwidth=0)
+    body_label = tk.Label(detail, image=body_img, borderwidth=0)
+    tire_label = tk.Label(detail, image=tire_img, borderwidth=0)
+    glider_lbl = tk.Label(detail, image=glider_img, borderwidth=0)
+
+
+    map_label.grid(row=1, column=0, ipadx=10)
+    char_label.grid(row=1, column=1, ipadx=10)
+    body_label.grid(row=1, column=2, ipadx=10)
+    tire_label.grid(row=1, column=3, ipadx=10)
+    glider_lbl.grid(row=1, column=4, ipadx=10)
+
+
+    detail.mainloop()
 
 
 # Main window
