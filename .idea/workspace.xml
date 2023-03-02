@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="7861957f-b4a0-4df5-afdf-8a688372c260" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MK8DX-World-Record-Data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bodies.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/characters.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gliders.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/paretoEfficiency.py" beforeDir="false" afterPath="$PROJECT_DIR$/paretoEfficiency.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tires.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

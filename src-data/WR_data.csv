@@ -1,0 +1,153 @@
+Cup,Track,Speed,Time+Video,Player,Date,Character,Vehicle,Tires,Glider
+Mushroom,Mario Kart Stadium,150cc,"1'34""636",Byron,2023-01-13,Waluigi,Wild Wiggler,Azure Roller,Flower Glider
+Mushroom,Mario Kart Stadium,200cc,"1'07""271",Army,2022-12-04,Wario,Wild Wiggler,Azure Roller,Paper Glider
+Mushroom,Water Park,150cc,"1'39""852",Alberto,2023-02-10,Roy,Mr. Scooty,Azure Roller,Cloud Glider
+Mushroom,Water Park,200cc,"1'10""979",Alberto,2021-09-25,Wario,Biddybuggy,Azure Roller,Paper Glider
+Mushroom,Sweet Sweet Canyon,150cc,"1'48""755",Alberto,2022-11-11,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Mushroom,Sweet Sweet Canyon,200cc,"1'21""330",Technical,2022-05-22,Wario,Biddybuggy,Button,Flower Glider
+Mushroom,Thwomp Ruins,150cc,"1'48""975",Alberto,2022-06-19,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Mushroom,Thwomp Ruins,200cc,"1'16""172",Alberto,2022-06-13,Wario,W 25 Silver Arrow,Azure Roller,Paper Glider
+Flower,Mario Circuit,150cc,"1'45""331",しらぬい,2022-07-05,Waluigi,Biddybuggy,Leaf Tires,Paper Glider
+Flower,Mario Circuit,150cc,"1'45""331",Alberto,2022-07-05,Waluigi,Biddybuggy,Leaf Tires,Cloud Glider
+Flower,Mario Circuit,200cc,"1'12""925",ろーる,2022-02-13,Heavy Mii,W 25 Silver Arrow,Leaf Tires,Paper Glider
+Flower,Toad Harbor,150cc,"2'02""279",なすの,2023-01-25,Waluigi,Mr. Scooty,Azure Roller,Paper Glider
+Flower,Toad Harbor,200cc,"1'26""141",Army,2023-02-27,Wario,Blue Falcon,Crimson Slim,Gold Glider
+Flower,Twisted Mansion,150cc,"1'54""460",Alberto,2022-08-30,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Flower,Twisted Mansion,200cc,"1'22""268",grace,2022-10-16,Heavy Mii Crossing,Yoshi Bike,Button,Paper Glider
+Flower,Shy Guy Falls,150cc,"1'56""208",iXA,2022-07-17,Waluigi,Mr. Scooty,Azure Roller,Paper Glider
+Flower,Shy Guy Falls,200cc,"1'26""150",Army,2022-01-01,Waluigi,Wild Wiggler,Leaf Tires,Paper Glider
+Star,Sunshine Airport,150cc,"1'58""103",Alberto,2022-08-28,Waluigi,Biddybuggy,Azure Roller,Paper Glider
+Star,Sunshine Airport,200cc,"1'28""149",Alberto,2023-01-04,Waluigi,Wild Wiggler,Azure Roller,Paper Glider
+Star,Dolphin Shoals,150cc,"1'53""384",はるいろ,2023-02-23,Rosalina,Streetle,Azure Roller,Paper Glider
+Star,Dolphin Shoals,200cc,"1'21""980",Alberto,2022-04-03,Waluigi,Streetle,Azure Roller,Paper Glider
+Star,Electrodrome,150cc,"1'55""865",Alberto,2022-11-18,Roy,Biddybuggy,Azure Roller,Paper Glider
+Star,Electrodrome,200cc,"1'23""441",Alberto,2021-08-14,Roy,Mach 8,Leaf Tires,Cloud Glider
+Star,Mount Wario,150cc,"1'41""983",StervtL,2021-09-02,Roy,Biddybuggy,Azure Roller,Paper Glider
+Star,Mount Wario,150cc,"1'41""983",しらぬい,2023-01-09,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Star,Mount Wario,200cc,"1'15""133",Alberto,2022-09-26,Wario,Wild Wiggler,Azure Roller,Paper Glider
+Speical,Cloudtop Cruise,150cc,"1'59""786",Army,2022-02-02,Waluigi,Mr. Scooty,Azure Roller,Paper Glider
+Speical,Cloudtop Cruise,200cc,"1'28""975",Alberto,2021-10-07,Wario,Teddy Buggy,Azure Roller,Paper Glider
+Speical,Bone-Dry Dunes,150cc,"1'46""912",Army,2021-07-06,Baby Daisy,Biddybuggy,Azure Roller,Cloud Glider
+Speical,Bone-Dry Dunes,200cc,"1'19""647",Panda,2021-07-15,Rosalina,Biddybuggy,Azure Roller,Paper Glider
+Speical,Bowser's Castle,150cc,"1'58""838",しらぬい,2022-11-06,Roy,Biddybuggy,Azure Roller,Paper Glider
+Speical,Bowser's Castle,200cc,"1'26""046",Panda,2022-11-25,Wario,Wild Wiggler,Leaf Tires,Paper Glider
+Speical,Rainbow Road,150cc,"1'59""010",Alberto,2023-01-01,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Speical,Rainbow Road,200cc,"1'31""842",Technical,2022-11-28,Yoshi,Biddybuggy,Roller,Paper Glider
+Shell,Wii Moo Moo Meadows,150cc,"1'24""460",Alberto,2022-07-18,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Shell,Wii Moo Moo Meadows,200cc,"0'58""517",Army,2023-01-31,Wario,Sneeker,Crimson Slim,Hylian Kite
+Shell,GBA Mario Circuit,150cc,"1'23""810",クローリン,2023-01-17,Donkey Kong,Biddybuggy,Button,Paper Glider
+Shell,GBA Mario Circuit,200cc,"0'59""968",StervtL,2021-05-31,Waluigi,Wild Wiggler,Leaf Tires,Paper Glider
+Shell,DS Cheep Cheep Beach,150cc,"1'47""048",Alberto,2022-01-01,Baby Peach,Biddybuggy,Azure Roller,Paper Glider
+Shell,DS Cheep Cheep Beach,200cc,"1'16""053",Alberto,2022-06-08,Wario,Landship,Azure Roller,Super Glider
+Shell,N64 Toad's Turnpike,150cc,"1'46""373",えぢから,2020-11-01,Wario,Sport Bike,Slim,Super Glider
+Shell,N64 Toad's Turnpike,200cc,"1'12""098",Alphabet Soup,2023-02-27,Wario,Sport Bike,Metal,Gold Glider
+Banana,GCN Dry Dry Desert,150cc,"1'53""624",Army,2021-04-25,Baby Daisy,Biddybuggy,Azure Roller,Parachute
+Banana,GCN Dry Dry Desert,200cc,"1'17""256",Panda,2021-12-30,King Boo,Streetle,Azure Roller,Paper Glider
+Banana,SNES Donut Plains 3,150cc,"1'12""833",Alpaco,2022-03-14,Baby Daisy,Biddybuggy,Azure Roller,Parachute
+Banana,SNES Donut Plains 3,200cc,"0'55""241",JenZua,2022-11-02,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Banana,N64 Royal Raceway,150cc,"1'55""654",そうめん,2022-06-04,Waluigi,Biddybuggy,Roller,Paper Glider
+Banana,N64 Royal Raceway,200cc,"1'23""607",Technical,2023-01-01,Waluigi,Teddy Buggy,Azure Roller,Wario Wing
+Banana,3DS DK Jungle,150cc,"2'01""176",StervtL,2021-10-01,Wario,Sports Coupe,Azure Roller,Paper Glider
+Banana,3DS DK Jungle,200cc,"1'27""517",Panda,2023-02-01,Donkey Kong,Biddybuggy,Azure Roller,Paper Glider
+Leaf,DS Wario Stadium,150cc,"1'50""994",StervtL,2022-06-12,Waluigi,Biddybuggy,Azure Roller,Paper Glider
+Leaf,DS Wario Stadium,200cc,"1'21""705",Pii,2023-01-10,Waluigi,Biddybuggy,Azure Roller,Paper Glider
+Leaf,GCN Sherbet Land,150cc,"1'46""998",Alberto,2022-07-24,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Leaf,GCN Sherbet Land,200cc,"1'16""897",Alberto,2022-01-14,Link,Streetle,Azure Roller,Paper Glider
+Leaf,3DS Music Park,150cc,"1'50""979",Alberto,2021-09-23,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Leaf,3DS Music Park,200cc,"1'23""367",Alberto,2021-05-27,Waluigi,W 25 Silver Arrow,Azure Roller,Super Glider
+Leaf,N64 Yoshi Valley,150cc,"1'58""431",Alberto,2022-07-01,Lemmy,Biddybuggy,Azure Roller,Parachute
+Leaf,N64 Yoshi Valley,200cc,"1'24""386",Alberto,2022-07-20,Waluigi,Wild Wiggler,Azure Roller,Wario Wing
+Lightning,DS Tick-Tock Clock,150cc,"1'42""194",Alberto,2023-01-14,Lemmy,Biddybuggy,Azure Roller,Paper Glider
+Lightning,DS Tick-Tock Clock,200cc,"1'13""537",Army,2022-06-19,Waluigi,Biddybuggy,Azure Roller,Paper Glider
+Lightning,3DS Piranha Plant Slide,150cc,"1'58""997",Pii,2022-12-07,Waluigi,Biddybuggy,Azure Roller,Paper Glider
+Lightning,3DS Piranha Plant Slide,200cc,"1'26""244",Pii,2022-09-23,Dry Bowser,W 25 Silver Arrow,Leaf Tires,Paper Glider
+Lightning,Wii Grumble Volcano,150cc,"1'53""188",Panda,2022-01-21,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Lightning,Wii Grumble Volcano,200cc,"1'22""207",Panda,2023-02-06,Donkey Kong,Biddybuggy,Azure Roller,Paper Glider
+Lightning,N64 Rainbow Road,150cc,"1'19""972",Vincent,2022-10-06,Dry Bowser,Mach 8,Leaf Tires,Paper Glider
+Lightning,N64 Rainbow Road,200cc,"0'56""522",Alberto,2022-10-01,Dry Bowser,Mach 8,Leaf Tires,Paper Glider
+Egg,GCN Yoshi Circuit,150cc,"1'41""974",Army,2023-01-22,Baby Daisy,Mr. Scooty,Azure Roller,Parachute
+Egg,GCN Yoshi Circuit,200cc,"1'13""132",EternalX,2023-02-11,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Egg,Excitebike Arena,150cc,"1'39""305",Army,2023-02-11,Baby Daisy,Biddybuggy,Azure Roller,Parachute
+Egg,Excitebike Arena,200cc,"1'14""269",Alberto,2023-01-09,Roy,Biddybuggy,Azure Roller,Parachute
+Egg,Dragon Driftway,150cc,"1'40""540",Alberto,2023-02-26,Baby Daisy,Biddybuggy,Azure Roller,Cloud Glider
+Egg,Dragon Driftway,200cc,"1'16""458",Army,2021-10-06,Baby Daisy,Biddybuggy,Leaf Tires,Parachute
+Egg,Mute City,150cc,"1'51""278",StervtL,2020-06-21,Waluigi,Mr. Scooty,Leaf Tires,Paper Glider
+Egg,Mute City,200cc,"1'20""662",Pii,2023-02-12,Heavy Mii Cpt Falcon,Mach 8,Wood,Cloud Glider
+Triforce,Wii Wario's Gold Mine,150cc,"2'02""436",frog,2022-12-01,Wario,Splat Buggy,Slim,Gold Glider
+Triforce,Wii Wario's Gold Mine,200cc,"1'24""998",Alberto,2022-05-20,Wario,Mach 8,Crimson Slim,Gold Glider
+Triforce,SNES Rainbow Road,150cc,"1'26""268",Vincent,2022-07-28,Roy,Biddybuggy,Roller,Cloud Glider
+Triforce,SNES Rainbow Road,200cc,"1'02""171",Alberto,2022-06-04,Roy,Biddybuggy,Azure Roller,Flower Glider
+Triforce,Ice Ice Outpost,150cc,"1'45""216",Army,2022-02-19,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Triforce,Ice Ice Outpost,200cc,"1'16""963",Alberto,2022-05-15,Wario,Wild Wiggler,Azure Roller,Paper Glider
+Triforce,Hyrule Circuit,150cc,"1'47""675",エル,2022-07-07,Waluigi,Biddybuggy,Azure Roller,Paper Glider
+Triforce,Hyrule Circuit,200cc,"1'20""344",JenZua,2023-01-01,Waluigi,Biddybuggy,Azure Roller,Paper Glider
+Crossing,GCN Baby Park,150cc,"1'02""142",JenZua,2022-02-20,Waluigi,Mr. Scooty,Leaf Tires,Paper Glider
+Crossing,GCN Baby Park,150cc,"1'02""142",しののめ,2022-06-21,Waluigi,Mr. Scooty,Button,Paper Glider
+Crossing,GCN Baby Park,200cc,"0'44""794",EternalX,2021-08-04,Baby Daisy,Mr. Scooty,Button,Parachute
+Crossing,GBA Cheese Land,150cc,"1'41""858",Army,2023-02-03,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Crossing,GBA Cheese Land,200cc,"1'14""917",alpha,2022-04-22,Baby Peach,Mr. Scooty,Azure Roller,Paper Glider
+Crossing,Wild Woods,150cc,"1'46""013",Panda,2022-07-08,Donkey Kong,Biddybuggy,Azure Roller,Paper Glider
+Crossing,Wild Woods,200cc,"1'16""695",Alberto,2023-01-01,Waluigi,Biddybuggy,Leaf Tires,Paper Glider
+Crossing,Animal Crossing,150cc,"1'36""702",Army,2022-07-04,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Crossing,Animal Crossing,200cc,"1'10""749",4laps2win,2023-02-19,Heavy Mii Crossing,Teddy Buggy,Azure Roller,Super Glider
+Bell,3DS Neo Bowser City,150cc,"1'42""571",Alberto,2022-02-27,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Bell,3DS Neo Bowser City,200cc,"1'18""984",Alberto,2022-09-08,Baby Peach,Biddybuggy,Azure Roller,Paper Glider
+Bell,GBA Ribbon Road,150cc,"1'44""300",Army,2023-01-12,Waluigi,Biddybuggy,Azure Roller,Paper Glider
+Bell,GBA Ribbon Road,200cc,"1'17""185",Army,2022-10-14,Roy,Biddybuggy,Azure Roller,Paper Glider
+Bell,Super Bell Subway,150cc,"1'40""490",Army,2022-06-27,Baby Daisy,Biddybuggy,Azure Roller,Parachute
+Bell,Super Bell Subway,200cc,"1'13""219",Alberto,2022-11-03,Waluigi,Biddybuggy,Azure Roller,Paper Glider
+Bell,Big Blue,150cc,"1'23""583",StervtL,2021-03-01,Wario,Mach 8,Leaf Tires,Paper Glider
+Bell,Big Blue,200cc,"1'00""500",FA,2022-09-12,Dry Bowser,Mach 8,Leaf Tires,Paper Glider
+Bell,Big Blue,200cc,"1'00""500",Alberto,2022-10-22,Wario,Mach 8,Leaf Tires,Paper Glider
+Golden Dash,Tour Paris Promenade,150cc,"1'50""367",Panda,2022-07-03,Donkey Kong,Mr. Scooty,Azure Roller,Paper Glider
+Golden Dash,Tour Paris Promenade,200cc,"1'16""534",Army,2022-10-25,Wario,Sport Bike,Crimson Slim,Super Glider
+Golden Dash,3DS Toad Circuit,150cc,"1'20""417",Army,2022-07-19,Waluigi,Mr. Scooty,Azure Roller,Paper Glider
+Golden Dash,3DS Toad Circuit,200cc,"0'56""489",Army,2022-06-14,Wario,Prancer,Crimson Slim,Super Glider
+Golden Dash,N64 Choco Mountain,150cc,"1'52""670",Panda,2022-04-09,Bowser,Biddybuggy,Azure Roller,Paper Glider
+Golden Dash,N64 Choco Mountain,200cc,"1'20""399",Alberto,2022-06-23,Waluigi,Teddy Buggy,Azure Roller,Paper Glider
+Golden Dash,Wii Coconut Mall,150cc,"1'41""767",Army,2022-07-23,Baby Daisy,Biddybuggy,Azure Roller,Parachute
+Golden Dash,Wii Coconut Mall,200cc,"1'14""263",Army,2022-07-13,Waluigi,Biddybuggy,Azure Roller,Paper Glider
+Lucky Cat,Tour Tokyo Blur,150cc,"1'25""830",Alberto,2022-08-26,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Lucky Cat,Tour Tokyo Blur,200cc,"0'59""049",Alberto,2022-11-11,Wario,Gold Kart,Crimson Slim,Super Glider
+Lucky Cat,DS Shroom Ridge,150cc,"1'44""973",Alberto,2022-12-05,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Lucky Cat,DS Shroom Ridge,200cc,"1'15""746",Alberto,2022-07-08,Waluigi,Varmint,Azure Roller,Super Glider
+Lucky Cat,GBA Sky Garden,150cc,"1'27""117",Alberto,2023-01-01,Donkey Kong,Mr. Scooty,Azure Roller,Paper Glider
+Lucky Cat,GBA Sky Garden,200cc,"1'01""951",EternalX,2022-11-17,Waluigi,Biddybuggy,Azure Roller,Paper Glider
+Lucky Cat,Tour Ninja Hideaway,150cc,"1'52""502",frog,2023-01-11,Baby Peach,Biddybuggy,Azure Roller,Paper Glider
+Lucky Cat,Tour Ninja Hideaway,200cc,"1'24""193",Panda,2022-06-30,Dry Bowser,Biddybuggy,Azure Roller,Paper Glider
+Turnip,Tour New York Minute,150cc,"1'22""894",Army,2022-12-02,Baby Daisy,Biddybuggy,Azure Roller,Parachute
+Turnip,Tour New York Minute,200cc,"0'59""067",Army,2022-09-04,Wario,Landship,Azure Roller,Super Glider
+Turnip,SNES Mario Circuit 3,150cc,"1'31""043",Army,2023-01-01,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Turnip,SNES Mario Circuit 3,200cc,"1'04""799",JenZua,2022-11-25,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Turnip,N64 Kalimari Desert,150cc,"1'29""112",Army,2022-11-25,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Turnip,N64 Kalimari Desert,200cc,"1'01""662",Panda,2022-11-18,Wario,Streetle,Azure Roller,Super Glider
+Turnip,DS Waluigi Pinball,150cc,"2'19""099",Army,2022-11-20,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Turnip,DS Waluigi Pinball,150cc,"2'19""099",Alberto,2022-11-25,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Turnip,DS Waluigi Pinball,200cc,"1'46""169",Army,2022-09-29,Baby Daisy,Mr. Scooty,Azure Roller,Paper Glider
+Propeller,Tour Sydney Sprint,150cc,"2'00""484",Panda,2023-02-08,Donkey Kong,Biddybuggy,Azure Roller,Paper Glider
+Propeller,Tour Sydney Sprint,200cc,"1'24""801",Vincent,2022-09-18,Wario,Standard Kart,Crimson Slim,Super Glider
+Propeller,Tour Sydney Sprint,200cc,"1'24""801",Army,2022-09-25,Wario,Standard Kart,Crimson Slim,Super Glider
+Propeller,GBA Snow Land,150cc,"1'26""430",Army,2023-01-01,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Propeller,GBA Snow Land,200cc,"1'04""598",Alberto,2022-12-02,Koopa Troopa,Streetle,Cushion,Paper Glider
+Propeller,Wii Mushroom Gorge,150cc,"1'27""337",fairy,2022-10-22,Waluigi,Biddybuggy,Azure Roller,Paper Glider
+Propeller,Wii Mushroom Gorge,200cc,"1'02""121",EternalX,2022-10-16,Black Yoshi,Biddybuggy,Azure Roller,Parachute
+Propeller,Sky-High Sundae,150cc,"1'54""905",AK,2022-10-08,Waluigi,Biddybuggy,Azure Roller,Paper Glider
+Propeller,Sky-High Sundae,200cc,"1'19""812",Hikki,2022-10-05,Roy,Wild Wiggler,Leaf Tires,Paper Glider
+Rock,Tour London Loop,150cc,"2'07""789",Panda,2023-02-21,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Rock,Tour London Loop,200cc,"1'28""619",Army,2023-01-24,Wario,Sport Bike,Crimson Slim,Super Glider
+Rock,GBA Boo Lake,150cc,"1'21""130",Alberto,2022-12-28,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Rock,GBA Boo Lake,200cc,"0'59""651",Alberto,2022-12-27,Waluigi,Biddybuggy,Button,Paper Glider
+Rock,3DS Rock Rock Mountain,150cc,"2'07""809",Panda,2022-12-15,Wario,Teddy Buggy,Cushion,Wario Wing
+Rock,3DS Rock Rock Mountain,200cc,"1'27""474",grace,2023-01-30,Wario,Yoshi Bike,Sponge,Gold Glider
+Rock,Wii Maple Treeway,150cc,"2'23""271",Panda,2023-01-07,Donkey Kong,Biddybuggy,Azure Roller,Paper Glider
+Rock,Wii Maple Treeway,200cc,"1'48""980",Vincent,2023-02-26,Heavy Mii,Gold Kart,Crimson Slim,Super Glider
+Moon,Tour Berlin Byways,150cc,"1'56""084",Army,2023-02-14,Baby Daisy,Biddybuggy,Azure Roller,Parachute
+Moon,Tour Berlin Byways,200cc,"1'21""984",Army,2023-01-09,Waluigi,Teddy Buggy,Azure Roller,Super Glider
+Moon,DS Peach Gardens,150cc,"2'03""717",Army,2022-12-23,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Moon,DS Peach Gardens,150cc,"2'03""717",Alberto,2022-12-23,Baby Peach,Biddybuggy,Azure Roller,Paper Glider
+Moon,DS Peach Gardens,200cc,"2'03""717",Panda,2023-02-10,Baby Daisy,Biddybuggy,Azure Roller,Paper Glider
+Moon,DS Peach Gardens,200cc,"1'26""251",Army,2023-01-05,Wario,Biddybuggy,Azure Roller,Paper Glider
+Moon,Tour Merry Mountain,150cc,"1'50""981",Alberto,2022-12-22,Baby Peach,Biddybuggy,Azure Roller,Paper Glider
+Moon,Tour Merry Mountain,200cc,"1'18""975",Alberto,2022-12-24,Wario,Wild Wiggler,Azure Roller,Paper Glider
+Moon,3DS Rainbow Road,150cc,"1'37""458",ラス,2023-02-24,Waluigi,Biddybuggy,Azure Roller,Paper Glider
+Moon,3DS Rainbow Road,200cc,"1'09""857",Technical,2023-01-27,Dry Bowser,W 25 Silver Arrow,Wood,Super Glider

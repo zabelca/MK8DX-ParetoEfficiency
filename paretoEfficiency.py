@@ -175,6 +175,10 @@ boyVillager = r"images/deluxe/MK8DX_Male_Villager.png"
 girlVillager = r"images/deluxe/MK8DX_Female_Villager.png"
 furryPeach = r"images/deluxe/MK8DX_Cat_Peach_Icon.png"
 
+cptfal_mii = r"images/MarioKart8FoxSuit-0.png"
+toad_mii = r"images/MK8_Toad_Suit.png"
+crossing_mii = r"images/MK8_Animal_Crossing_Suit.png"
+
 # Body files
 standard_kart = r"images/120px-StandardKartBodyMK8.png"
 pipe_frame = r"images/120px-PipeFrameBodyMK8.png"
@@ -369,7 +373,7 @@ chars_dict = {
     'Baby Peach': babyPeach,
     'Baby Daisy': babyDaisy,
     'Baby Rosalina': babyRosalina,
-    'Lemmy Koopa': lemmy,
+    'Lemmy': lemmy,
     'Light Mii': mii,
     'Toad': toad,
     'Shy Guy': shyguy,
@@ -389,7 +393,7 @@ chars_dict = {
     'Donkey Kong': dKong,
     'Waluigi': sexyman,
     'Rosalina': rosalina,
-    'Roy Koopa': roy,
+    'Roy': roy,
     'Metal Mario': metalMario,
     'Pink Gold Peach': goldPeach,
     'Wario': wario,
@@ -403,8 +407,9 @@ chars_dict = {
     'Isabelle': girl,
     'Dry Bowser': dryBowser,
     'Link': link,
-    'Heavy Mii Toad': mii,
-    'Heavy Mii CptFal': mii
+    'Heavy Mii Toad': toad_mii,
+    'Heavy Mii Cpt Falcon': cptfal_mii,
+    'Heavy Mii Crossing': crossing_mii
 }
 
 body_dict = {
@@ -427,7 +432,7 @@ body_dict = {
     'Standard Bike': standard_bike,
     'Flame Ride': flame_rider,
     'Varmit': varmit,
-    'Sports Bike': sport_bike,
+    'Sport Bike': sport_bike,
     'Jet Bike': jet_bike,
     'Comet': comet,
     'Yoshi Bike': yoshi_bike,
@@ -444,7 +449,8 @@ body_dict = {
     'P-Wing': p_wing,
     'Master Cycle': master_cycle,
     'City Tripper': city_tripper,
-    'Bone Rattler': bone_ratter
+    'Bone Rattler': bone_ratter,
+    'Splat Buggy': splat_buddy
 }
 
 tire_dict = {
@@ -491,11 +497,12 @@ glider_dict = {
 }
 
 # originally from https://github.com/woodnathan/MarioKart8-Stats, added DLC and fixed a few typos
-bodies = pd.read_csv('bodies.csv')
-chars = pd.read_csv('characters.csv')
-gliders = pd.read_csv('gliders.csv')
-tires = pd.read_csv('tires.csv')
-tracks = pd.read_csv('MK8DX-World-Record-Data.csv')
+bodies = pd.read_csv('src-data/BODIES.csv')
+chars = pd.read_csv('src-data/CHARACTERS.csv')
+gliders = pd.read_csv('src-data/GLIDERS.csv')
+tires = pd.read_csv('src-data/TIRES.csv')
+#tracks = pd.read_csv('MK8DX-World-Record-Data.csv')
+tracks = pd.read_csv('src-data/WR_data.csv')
 """
 # use only stock (non-DLC) characters / karts / tires
 chars = chars.loc[chars['DLC']==0]
@@ -515,6 +522,7 @@ tires_unique = tires.drop_duplicates(subset=stat_cols).set_index('Tire')[stat_co
 n_uniq_chars = len(chars_unique)
 n_uniq_bodies = len(bodies_unique)
 n_uniq_tires = len(tires_unique)
+print(n_uniq_chars)
 
 # add a column indicating which category each character/kart/tire is in
 chars['char_class'] = KMeans(n_uniq_chars, n_init=10, random_state=0).fit_predict(chars[stat_cols])
@@ -525,7 +533,10 @@ tires['tire_class'] = KMeans(n_uniq_tires, n_init=10).fit_predict(tires[stat_col
 # for Non-DLC Stats:
 #char_class_dict = dict(zip([3, 0, 5, 4, 2, 6, 1], [0, 1, 2, 3, 4, 5, 6]))
 # for DLC Stats:
-char_class_dict = dict(zip([0, 3, 2, 7, 8, 4, 1, 6, 5], [0, 1, 2, 3, 4, 5, 6, 7, 8]))
+#char_class_dict = dict(zip([0, 3, 2, 7, 8, 4, 1, 6, 5], [0, 1, 2, 3, 4, 5, 6, 7, 8]))
+
+#TESTING
+char_class_dict = dict(zip([14, 11, 1, 10, 7, 8, 12, 5, 2, 13, 4, 0, 6, 15, 9, 3], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]))
 chars['char_class'] = chars['char_class'].apply(lambda c: char_class_dict[c])
 
 # only two types of gliders, one of which is pretty clearly just better
@@ -683,7 +694,7 @@ def display_tracks(key):
     button_array = []
     #track_list = tracks[tracks.Cup == key]
     track_list = tracks.loc[tracks['Cup'] == key]
-    track_list = track_list["Track"]
+    track_list = track_list["Track"].drop_duplicates()
     for x in track_list:
         track_img = ImageTk.PhotoImage(file=img_files[x])
         images.append(track_img)
@@ -696,7 +707,7 @@ def display_tracks(key):
 def track_details(key):
     # Track detail window
     detail = tk.Toplevel()
-    detail.title("Track Details")
+    detail.title(key)
     detail.geometry("720x720")
 
     map_text_label = tk.Label(detail, text="Track Map")
@@ -711,7 +722,14 @@ def track_details(key):
     glider_text_label.grid(row=0, column=4)
 
     # locate the details for the track
-    track_list = tracks.loc[tracks['Track'] == key]
+    if (var.get() == 0):
+        track_list = tracks.loc[tracks['Speed'] == "150cc"]
+    elif (var.get() == 1):
+        track_list = tracks.loc[tracks['Speed'] == "200cc"]
+
+
+    #track_list = tracks.loc[tracks['Track'] == key]
+    track_list = track_list.loc[track_list['Track'] == key]
     character = track_list['Character'].iloc[0]
     body = track_list['Vehicle'].iloc[0]
     tire = track_list['Tires'].iloc[0]
@@ -816,5 +834,13 @@ button17.grid(row=2, column=4, ipady=10, pady=10, padx=5)
 bell_cup_icon = ImageTk.PhotoImage(Image.open(r"images/MK8_Bell_Cup_Emblem.png").resize((128,128), Image.Resampling.BICUBIC))
 button18 = tk.Button(root, image=bell_cup_icon, width=128, height=128, borderwidth=0, command=lambda: display_tracks("Bell"))
 button18.grid(row=2, column=5, ipady=10, pady=10, padx=5)
+
+# Checkbox button
+var = tk.IntVar()
+cb_150cc = tk.Radiobutton(root, text="150cc", variable=var, value=0)
+cb_200cc = tk.Radiobutton(root, text="200cc", variable=var, value=1)
+
+cb_150cc.grid(row=0, column=6)
+cb_200cc.grid(row=0, column=7)
 
 root.mainloop()
